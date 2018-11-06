@@ -99,16 +99,6 @@ label{
   cursor: grab;
   border-style: double;
 }
-canvas {
-    cursor: move; 
-    cursor: -webkit-grab;
-    cursor: -moz-grab;
-    cursor: grab;
-  }
-  canvas:active {
-    cursor: -webkit-grabbing;
-    cursor: -moz-grabbing;
-    cursor: grabbing;
 	  
 .radio-toolbar input[type="radio"]:checked+label {
   background-color: #E9967A;

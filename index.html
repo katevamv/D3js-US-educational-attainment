@@ -25,6 +25,16 @@
     
 
 </head>
+	  <header>
+       <nav>
+    <ul>
+      <li><a href="#top" >Top</a></li>
+      <li><a href="#national">National</a></li>
+      <li><a href="#regional">Regional</a></li>
+      <li><a href="#state">State-Level</a></li>
+    <ul>
+        </nav>
+    </header>
 
  
 <body>
@@ -95,7 +105,7 @@ $("nav a").mouseover(function() {
 });
     $( document ).ready(function() {
       $(window).scroll(function(){
-        if ($(window).scrollTop() >= 300) {
+        if ($(window).scrollTop() >= 60) {
            $('nav').addClass('fixed-header');
         }
         else {

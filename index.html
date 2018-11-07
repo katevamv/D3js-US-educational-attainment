@@ -95,24 +95,16 @@
 
 </script>
 
-function playclip() {
-if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
-if (document.all)
- {
-  document.all.sound.src = "mousehover-sound.mp3";
- }
-}
 
-else {
-{
-var audio = document.getElementsByTagName("audio")[0];
-audio.play();
-}
-}
-}
 
 	
 <script>
+	
+	$("nav a").mouseover(function() {
+ var audio = document.getElementsByTagName("audio")[0];   
+ audio.play();
+});
+	
 $(document).ready(function(){
     $("h1, h2, label").mouseenter(function(){
 		responsiveVoice.cancel(); 
